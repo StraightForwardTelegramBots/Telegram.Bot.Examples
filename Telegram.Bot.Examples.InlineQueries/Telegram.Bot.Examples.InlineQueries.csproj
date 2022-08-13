@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Telegram.Bot" Version="18.0.0" />
+    <Content Include="Articles/*.html" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Articles/*.html" CopyToOutputDirectory="Always" />
+    <ProjectReference Include="..\..\Telegram.Bot\src\Telegram.Bot\Telegram.Bot.csproj" />
   </ItemGroup>
 
 </Project>

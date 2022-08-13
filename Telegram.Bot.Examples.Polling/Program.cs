@@ -18,7 +18,6 @@ var receiverOptions = new ReceiverOptions()
 };
 
 bot.StartReceiving(updateHandler: UpdateHandlers.HandleUpdateAsync,
-                   pollingErrorHandler: UpdateHandlers.PollingErrorHandler,
                    receiverOptions: receiverOptions,
                    cancellationToken: cts.Token);
 
